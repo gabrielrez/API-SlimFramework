@@ -2,6 +2,7 @@
 
 class Dado
 {
+  private $id;
   private $name;
   private $number;
 
@@ -9,6 +10,16 @@ class Dado
   {
     $this->name = $name;
     $this->number = $number;
+  }
+
+  public function getId()
+  {
+    return $this->id;
+  }
+
+  public function setId($id)
+  {
+    $this->id = $id;
   }
 
   public function getName()
